@@ -1,0 +1,384 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #1f2937;
+    background-color: #ffffff;
+}
+
+/* Utility classes */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-row { flex-direction: row; }
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.justify-center { justify-content: center; }
+.w-full { width: 100%; }
+.gap-0 { gap: 0; }
+.gap-4 { gap: 1rem; }
+.gap-20 { gap: 5rem; }
+.max-w-\[1300px\] { max-width: 1300px; }
+.bg-white { background-color: white; }
+.pt-10 { padding-top: 2.5rem; }
+.p-8 { padding: 2rem; }
+.mt-8 { margin-top: 2rem; }
+
+/* Typography */
+.text-gray-800 { color: #1f2937; }
+.text-2xl { font-size: 1.5rem; line-height: 2rem; }
+.font-light { font-weight: 300; }
+.text-blue-500 { color: #3b82f6; text-decoration: none; }
+
+/* Line height */
+h1, h2, p {
+    line-height: 2rem;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* CTA section */
+.cta-links {
+    margin-top: 2rem;
+}
+
+.cta-item {
+    margin-top: 1rem;
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+    .sm\:mt-20 {
+        margin-top: 5rem;
+    }
+    .sm\:flex-row {
+        flex-direction: row !important;
+    }
+    .sm\:items-center {
+        align-items: center !important;
+    }
+    .sm\:mt-0 {
+        margin-top: 0 !important;
+    }
+}
+
+/* Main container */
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.pt-10 {
+    padding-top: 2.5rem;
+}
+
+.p-8 {
+    padding: 2rem;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.mt-8 {
+    margin-top: 2rem;
+}
+
+@media (min-width: 640px) {
+    .sm\:mt-20 {
+        margin-top: 5rem;
+    }
+}
+
+/* Content max-width wrapper */
+.flex-col > * {
+    max-width: 1300px;
+    width: 100%;
+}
+
+/* Typography */
+h1, h2 {
+    font-size: 1.5rem; /* text-2xl in Tailwind */
+    font-weight: 300;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+}
+
+h1 {
+    margin: 0 0 40px;
+}
+
+p {
+    font-size: 1.5rem; /* text-2xl in Tailwind */
+    line-height: 2rem;
+    font-weight: 300;
+}
+
+/* Sections spacing */
+section {
+    margin-bottom: 60px;
+}
+
+/* Introduction section */
+.intro {
+    text-align: left;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.name {
+    color: #007AFF;
+    font-weight: 300;
+}
+
+.avatar {
+    margin: 0;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Work section */
+.work {
+    text-align: left;
+}
+
+.highlight {
+    color: #007AFF;
+}
+
+.projects {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* Social section */
+.social {
+    text-align: left;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* Additional info section */
+.additional-info {
+    text-align: left;
+}
+
+/* CTA Links section */
+.cta-links {
+    text-align: left;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+.cta-item {
+    margin-bottom: 1rem;
+}
+
+.cta-link {
+    color: #007AFF;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.cta-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body, h1, h2, p {
+        font-size: 1.5rem; /* Maintaining text-2xl size */
+        line-height: 2rem;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}
+
+.w-10 {
+    width: 2.5rem;
+}
+
+.h-10 {
+    height: 2.5rem;
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.gap-2 {
+    gap: 0.5rem;
+}
+
+.mb-10 {
+    margin-bottom: 2.5rem;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.app-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.app-card {
+    width: 2.5rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: all 200ms;
+    border: 1px solid #e5e7eb;
+}
+
+.app-card-container {
+    position: relative;
+    flex-shrink: 0;
+}
+
+@media (min-width: 640px) {
+    .app-card {
+        transform: rotate(6deg);
+    }
+    .app-card:hover {
+        transform: rotate(0deg);
+    }
+}
+
+.app-tooltip {
+    position: absolute;
+    top: -2rem;  /* -top-8 */
+    transform: translateX(-2rem);  /* -translate-x-8 */
+    background-color: rgba(0, 0, 0, 0.8);  /* bg-black bg-opacity-80 */
+    color: white;  /* text-white */
+    padding: 0.25rem 0.5rem;  /* px-2.5 py-1 */
+    border-radius: 1rem;  /* rounded-xl */
+    font-size: 0.75rem;  /* text-xs */
+    opacity: 0;
+    white-space: nowrap;
+    display: none;
+    transition: opacity 150ms;  /* transition-opacity */
+}
+
+@media (min-width: 640px) {
+    .app-tooltip {
+        display: block;  /* sm:block */
+    }
+    
+    .app-card-container:hover .app-tooltip {
+        opacity: 1;  /* sm:group-hover/lily:opacity-100 */
+    }
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+/* App specific styles */
+.app-tooltip {
+    display: none;
+    position: absolute;
+    background: #333;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 0.5rem;
+}
+
+.group:hover .app-tooltip {
+    display: block;
+}
+
+.cta-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cta-item a {
+    text-decoration: none;
+}
+
+/* Responsive styles */
+@media (min-width: 640px) {
+    .sm\:flex-row { flex-direction: row; }
+    .sm\:items-center { align-items: center; }
+    .sm\:mt-0 { margin-top: 0; }
+    .sm\:mt-20 { margin-top: 5rem; }
+}
+
+/* Default (mobile) styles - icons appear below text */
+.inline-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+/* Desktop styles - icons appear inline with text */
+@media (min-width: 640px) {
+    .inline-flex {
+        flex-direction: row;
+        align-items: center;
+    }
+} 

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" data-lt-installed="true">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+    <style>
+        @media (max-width: 640px) {
+            .social-icons-container {
+                display: flex !important;
+                flex-direction: row !important;
+                gap: 0.5rem !important;
+                margin-left: 0 !important;
+            }
+            .social-icon-wrapper {
+                margin-left: 0 !important;
+            }
+            .social-icon {
+                transform: rotate(0deg) !important;
+            }
+            .social-icon:hover {
+                transform: none !important;
+                translate: none !important;
+            }
+        }
+        
+        .product-makers-link {
+            text-decoration: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex flex-col bg-white pt-10 p-8 w-full items-center mt-0 sm:mt-20">
+        <div class="flex flex-row items-center justify-center w-full max-w-[1300px] gap-20">
+            <div class="flex flex-col items-start gap-6">
+                <div class="text-gray-800 text-2xl font-light flex flex-col items-start gap-4">
+                    <span class="mb-10 inline-flex">
+                        Hi, my name is Dani Diestre
+                        <img src="avatar.png" alt="Dani Diestre" class="w-10 h-10 rounded-full">
+                    </span>
+                    
+                    <span class="inline-flex">
+                        <span>I'm building a new way to capture user feedback</span>
+                        <a href="https://autentic.ai" target="_blank" rel="noopener noreferrer" class="relative group">
+                            <img src="autentic.png" alt="Autentic" class="w-10 h-10 rounded-xl border border-gray-300 sm:rotate-[6deg] transform transition-transform duration-300 ease-in-out sm:group-hover:rotate-0">
+                            <span class="absolute -top-8 left-1/2 -translate-x-1/2 bg-black text-white px-2.5 py-1 rounded-xl bg-opacity-80 text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap hidden sm:block">Autentic — AI agents that capture user feedback at scale.</span>
+                        </a>
+                    </span>
+                    
+                    <span class="inline-flex">
+                        <span>and host a podcast about product</span>
+                        <a href="https://www.youtube.com/@danidiestre" target="_blank" rel="noopener noreferrer" class="relative group">
+                            <img src="youtube.png" alt="YouTube" class="w-10 h-10 rounded-xl sm:rotate-[6deg] transform transition-transform duration-300 ease-in-out sm:group-hover:rotate-0">
+                            <span class="absolute -top-8 left-1/2 -translate-x-1/2 bg-black text-white px-2.5 py-1 rounded-xl bg-opacity-80 text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap hidden sm:block">@danidiestre</span>
+                        </a>
+                    </span>
+                    
+                    <span class="inline-flex mt-10">
+                        <span>I also post regularly on these platforms</span>
+                        <span class="inline-flex relative ml-1 social-icons-container gap-2 sm:gap-0 group">
+                            <a href="https://www.linkedin.com/in/danidiestre/" target="_blank" rel="noopener noreferrer" class="relative z-40 group/item">
+                                <img src="linkedin.png" alt="LinkedIn" class="w-10 h-10 rounded-xl cursor-pointer transition-all duration-300 rotate-0 sm:-rotate-12 transform group-hover:rotate-0 group-hover:translate-x-0">
+                                <span class="absolute -top-8 left-1/2 -translate-x-1/2 bg-black text-white px-2.5 py-1 rounded-xl bg-opacity-80 text-xs opacity-0 group-hover/item:opacity-100 transition-opacity whitespace-nowrap hidden sm:block">@danidiestre</span>
+                            </a>
+                            <a href="https://www.instagram.com/productleaders.podcast" target="_blank" rel="noopener noreferrer" class="relative z-30 sm:-ml-2 group/item">
+                                <img src="instagram.svg" alt="Instagram" class="w-10 h-10 rounded-xl cursor-pointer transition-all duration-300 rotate-0 sm:rotate-12 transform group-hover:rotate-0 group-hover:translate-x-4">
+                                <span class="absolute -top-8 left-1/2 -translate-x-1/2 bg-black text-white px-2.5 py-1 rounded-xl bg-opacity-80 text-xs opacity-0 group-hover/item:opacity-100 transition-opacity whitespace-nowrap hidden sm:block">@productleaders.podcast</span>
+                            </a>
+                            <a href="https://www.tiktok.com/@productleaders.podcast" target="_blank" rel="noopener noreferrer" class="relative z-20 sm:-ml-2 group/item">
+                                <img src="tiktok.png" alt="TikTok" class="w-10 h-10 rounded-xl cursor-pointer transition-all duration-300 rotate-0 sm:-rotate-12 transform group-hover:rotate-0 group-hover:translate-x-8">
+                                <span class="absolute -top-8 left-1/2 -translate-x-1/2 bg-black text-white px-2.5 py-1 rounded-xl bg-opacity-80 text-xs opacity-0 group-hover/item:opacity-100 transition-opacity whitespace-nowrap hidden sm:block">@productleaders.podcast</span>
+                            </a>
+                            <a href="https://x.com/dani_diestre" target="_blank" rel="noopener noreferrer" class="relative z-10 sm:-ml-2 group/item">
+                                <img src="twitter.png" alt="Twitter" class="w-10 h-10 rounded-xl cursor-pointer transition-all duration-300 rotate-0 sm:rotate-12 transform group-hover:rotate-0 group-hover:translate-x-12">
+                                <span class="absolute -top-8 left-1/2 -translate-x-1/2 bg-black text-white px-2.5 py-1 rounded-xl bg-opacity-80 text-xs opacity-0 group-hover/item:opacity-100 transition-opacity whitespace-nowrap hidden sm:block">@dani_diestre</span>
+                            </a>
+                        </span>
+                    </span>
+                    
+                    <span class="inline-flex mt-8">
+                        <span>Last, I started
+                        <a href="https://www.productmakers.ai/" target="_blank" rel="noopener noreferrer" class="product-makers-link text-blue-600 hover:text-purple-600 transition-colors">Product Makers</a>
+                        <br>
+                        a community where we make products with AI.
+                        </span>
+                    </span>
+                </div>
+                <div class="w-full border-t border-dotted border-gray-300 my-8"></div>
+
+                <span class="inline-flex flex-col relative group items-start gap-2 text-lg">
+                    <span>
+                        Want to hire a Product Manager or Designer? Or get hired? <a href="#" class="product-makers-link text-blue-500 hover:text-purple-600 transition-colors">Click here</a>
+                    </span>
+                    <span>
+                        Want to sponsor my videos? <a href="#" class="product-makers-link text-blue-500 hover:text-purple-600 transition-colors">Click here</a>
+                    </span>
+                    <span>
+                        Want to say hi? <a href="https://www.linkedin.com/in/danidiestre/" class="product-makers-link text-blue-500 hover:text-purple-600 transition-colors">Click here</a>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
