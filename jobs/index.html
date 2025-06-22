@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs - Dani Diestre</title>
+    <meta name="description" content="Encuentra el mejor talento en Product Management y Product Design">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <style>
+        .custom-shadow {
+            box-shadow: 0 0 24px rgba(233, 207, 20, 0.4);
+        }
+        .scroll-btn {
+            animation: bounce 2s infinite;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -24px;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            40% {
+                transform: translateX(-50%) translateY(-10px);
+            }
+            60% {
+                transform: translateX(-50%) translateY(-5px);
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const scrollBtn = document.getElementById('scrollBtn');
+            scrollBtn.addEventListener('click', function() {
+                document.getElementById('comoFunciona').scrollIntoView({ 
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="flex flex-col bg-white w-full items-center relative">
+        <div class="w-full max-w-[1300px] px-6 md:px-8 py-12 md:py-20">
+            <div class="flex flex-col md:flex-row items-start justify-between gap-12 md:gap-24">
+                <div class="flex flex-col items-start flex-1 max-w-xl">
+                    <h1 class="text-[40px] font-normal tracking-tight leading-tight">
+                        Encuentra a tu próximo líder de Producto
+                    </h1>
+                    
+                    <h2 class="text-xl text-gray-800 mt-8 leading-relaxed max-w-lg">
+                        Aprovecha la comunidad de <a href="https://www.youtube.com/@danidiestre" target="_blank" rel="noopener noreferrer" class="text-black hover:text-black/80 transition-colors no-underline hover:no-underline">Product Leaders</a> para conectar con los mejores Product Managers y Product Designers del sector.
+                    </h2>
+                    <h2 class="text-xl text-gray-800 mt-8 leading-relaxed max-w-lg">
+                        Sin comisiones hasta que contrates.
+                    </h2>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 mt-12">
+                        <a href="#empresa" class="no-underline inline-flex px-6 py-3 bg-black text-white rounded-md hover:bg-black/90 transition-colors text-base font-normal items-center justify-center shadow-sm hover:no-underline">
+                            Soy empresa
+                        </a>
+                        <a href="#candidato" class="no-underline inline-flex px-6 py-3 bg-white text-black rounded-md border border-[#e5e7eb] hover:bg-gray-50 transition-colors text-base font-normal items-center justify-center shadow-sm hover:no-underline">
+                            Soy candidato
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="flex-1 flex justify-center items-start">
+                    <img src="../images/foto-portada.png" alt="Dani Diestre" class="w-full max-w-md rounded-3xl object-cover custom-shadow">
+                </div>
+            </div>
+        </div>
+        <button id="scrollBtn" class="scroll-btn w-12 h-12 flex items-center justify-center rounded-full bg-black/5 hover:bg-black/10 transition-colors">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </button>
+    </div>
+
+    <div id="comoFunciona" class="w-full bg-white py-24">
+        <div class="max-w-[1300px] mx-auto px-6 md:px-8">
+            <div class="mb-16">
+                <h2 class="text-[32px] font-normal mb-4 leading-tight">Cómo funciona</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="p-6 border border-gray-200 rounded-xl hover:border-gray-300 transition-colors">
+                    <div class="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-[24px] font-normal mb-2 leading-tight">Describe tu búsqueda</h3>
+                    <p class="text-base text-gray-600">Cuéntanos qué perfil buscas y te ayudamos a encontrar los mejores candidatos de nuestra red.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-6 border border-gray-200 rounded-xl hover:border-gray-300 transition-colors">
+                    <div class="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-[24px] font-normal mb-2 leading-tight">Conoce candidatos</h3>
+                    <p class="text-base text-gray-600">Recibe perfiles preseleccionados y validados por nuestro equipo de talent scouts.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-6 border border-gray-200 rounded-xl hover:border-gray-300 transition-colors">
+                    <div class="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-[24px] font-normal mb-2 leading-tight">Contrata sin riesgo</h3>
+                    <p class="text-base text-gray-600">Solo pagas si contratas. Sin costes iniciales ni compromisos mínimos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full bg-gray-50 py-24">
+        <div class="max-w-[1300px] mx-auto px-6 md:px-8">
+            <div class="mb-16">
+                <h2 class="text-[32px] font-normal mb-4 leading-tight">Roles que cubrimos</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Card 1 -->
+                <div class="p-6 bg-white border border-gray-200 rounded-xl hover:border-gray-300 transition-colors">
+                    <div class="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-[24px] font-normal mb-2 leading-tight">Product Management</h3>
+                    <p class="text-base text-gray-600">Cubrimos roles de Head/VP of Product y Product Managers (Mid y Senior) con +3 años de experiencia.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-6 bg-white border border-gray-200 rounded-xl hover:border-gray-300 transition-colors">
+                    <div class="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-[24px] font-normal mb-2 leading-tight">Product Design</h3>
+                    <p class="text-base text-gray-600">Cubrimos roles de Product Design de +3 años de experiencia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full py-24">
+        <div class="max-w-[1300px] mx-auto px-6 md:px-8">
+            <div class="flex flex-col md:flex-row gap-12 md:gap-24 items-start">
+                <div class="flex-1 max-w-xl">
+                    <h2 class="text-[32px] font-normal mb-8 leading-tight">Sobre mí</h2>
+                    <div class="prose prose-lg">
+                        <p class="text-base text-gray-600 mb-6">
+                            Soy Dani Diestre, Product Manager y creador de contenido sobre producto digital.
+                        </p>
+                        <p class="text-base text-gray-600 mb-6">
+                            Soy el creador de <a href="https://www.youtube.com/@danidiestre" target="_blank" rel="noopener noreferrer" class="text-black hover:text-black/80 transition-colors no-underline hover:no-underline">Product Leaders</a>, el Podcast de referencia sobre producto digital en habla hispana. 
+                        </p>
+                        <p class="text-base text-gray-600 mb-6">Actualmente he fundado Autentic, la plataforma que te permite capturar feedback de usuarios a escala mediante conversaciones de voz.
+                        <div class="flex gap-4 mt-8">
+                            <a href="https://www.youtube.com/@danidiestre" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-gray-600 hover:text-black transition-colors text-sm sm:text-base">
+                                <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                </svg>
+                                YouTube
+                            </a>
+                            <a href="https://www.linkedin.com/in/danidiestre/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-gray-600 hover:text-black transition-colors text-sm sm:text-base">
+                                <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                                LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 flex justify-end">
+                    <img src="../images/dani.jpg" alt="Dani Diestre" class="w-full max-w-xl rounded-[2rem] object-cover custom-shadow">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full bg-gray-50 py-24">
+        <div class="max-w-[1300px] mx-auto px-6 md:px-8 text-center">
+            <h2 class="text-[40px] font-normal tracking-tight leading-tight">
+                Encuentra a tu próximo líder de producto
+            </h2>
+            <p class="text-base text-gray-800 mt-8 leading-relaxed max-w-2xl mx-auto">
+                Únete a nuestra comunidad de talento y conecta con las mejores empresas de producto.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 mt-12 justify-center max-w-xl mx-auto w-full">
+                <a href="#empresa" class="no-underline flex-1 inline-flex px-6 py-3 bg-black text-white rounded-md hover:bg-black/90 transition-colors text-base font-normal items-center justify-center shadow-sm hover:no-underline">
+                    Soy empresa
+                </a>
+                <a href="#candidato" class="no-underline flex-1 inline-flex px-6 py-3 bg-white text-black rounded-md border border-[#e5e7eb] hover:bg-gray-50 transition-colors text-base font-normal items-center justify-center shadow-sm hover:no-underline">
+                    Soy candidato
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
